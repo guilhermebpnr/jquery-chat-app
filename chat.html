@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <style type="text/css">
+        div {
+            border: 1px solid #dddddd;
+            margin: 5px;
+        }
+
+        footer {
+            height: 40px;
+        }
+
+        header {
+            height: 40px;
+        }
+
+        #avatar {
+            width: 40px;
+            float: left;
+        }
+
+        #username {
+            float: left;
+        }
+
+        #menu {
+            float: right;
+        }
+
+        #messages {
+            height: 500px;
+        }
+
+        #message-text {
+            float: left;
+        }
+
+        #send-button {
+            float: right;
+        }
+
+        .scrollable {
+            padding: 4px;
+            background-color: #eee;
+            height: 400px;
+            overflow: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="main">
+            <header>
+                <div id="avatar">
+                    <span>Avatar</span>
+                </div>
+                <div id="username">
+                    <span>Username</span>
+                </div>
+                <div id="menu">
+                    <span>Menu</span>
+                </div>
+            </header>
+            <div id="messages">
+                <span>Messages</span>
+                <div class="scrollable">
+                    <div class="message">And this here is a message.</div>
+                </div>
+            </div>
+            <footer>
+                <div id="message-text">
+                    <input type="text" placeholder="Insert your message">
+                </div>
+                <button id="send-button">Send</button>
+            </footer>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+
+</html>
