@@ -1,0 +1,148 @@
+body {
+    background: #11917f;
+    margin: 0;
+    font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
+}
+
+footer {
+    height: 40px;
+    background: #eee;
+    padding: 6px 10px 8px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    height: 40px;
+    background: #eee;
+    padding: 6px 10px 8px 10px;
+}
+
+#loader {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+    background: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+#avatar {
+    width: 40px;
+    float: left;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+}
+
+#smiley {
+    width: 40px;
+    float: left;
+    cursor: pointer;
+    padding: 8px 0 5px;
+}
+
+#username {
+    float: left;
+    height: 40px;
+    font-size: 16px;
+    padding: 2px 0 0 0;
+}
+
+#username * {
+    display: block;
+}
+
+#username label {
+    font-size: 13px;
+    color: #666;
+}
+
+#menu {
+    float: right;
+    height: 40px;
+    cursor: pointer;
+    padding: 8px 12px 10px;
+    color: #999;
+}
+
+#main {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #e5ddd5;
+    background-image: url('../img/bg.png');
+    -moz-box-shadow: 3px 3px 3px 3px #000;
+    -webkit-box-shadow: 3px 3px 3px 3px #000;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+#messages {
+    height: 100vh;
+    overflow: auto;
+    padding: 20px 50px 0 50px;
+}
+
+.message {
+    display: table;
+    padding: 10px 6px 3px 10px;
+    margin-bottom: 3px;
+    font-size: 13px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 1px 1px 0 rgba(0, 0, 0, .2);
+    max-width: 60%;
+}
+
+.message-in {
+    background: #fff;
+    border-radius: 10px 10px 10px 0;
+}
+
+.message-out {
+    background: rgb(220, 248, 198);
+    margin-left: auto;
+    border-radius: 10px 10px 0 10px;
+}
+
+.time {
+    float: right;
+    font-size: 10px;
+    padding: 10px 0 0 10px;
+}
+
+#message-form {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+#message-text {
+    width: 100%;
+}
+
+#message-text input {
+    width: 100%;
+}
+
+#message-input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+#message-send {
+    /* float: right; */
+}
+
+#send-button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: #999;
+    padding: 8px 10px 5px;
+}
